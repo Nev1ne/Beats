@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <!-- icon -->
+
+    <!-- Google fonts End -->
+
+    <!-- custon style Sheet & JavaScript -->
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js" defer></script>
+    <!-- custon style Sheet & JavaScript -->
+    <title>BeatsByNev</title>
+  </head>
+  <body class="home">
+    <header class="primary-header container flex">
+      <div class="header-inner-one flex">
+        <div class="logo">
+          <img src="image/logo.png" alt="" />
+        </div>
+        <button
+          class="mobile-close-btn"
+          data-visible="false"
+          aria-controls="primary-navigation"
+        >
+          <i class="uil uil-times-circle"></i>
+        </button>
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation flex"
+          >
+            <li>
+              <a class="active fs-100 fs-montserrat bold-500" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="shop.html"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="contactus.html"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="cart.html"
+                >Cart page</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-login flex">
+        <p class="fs-100 fs-montserrat bold-500">login</p>
+        <i class="uil uil-search"></i>
+        <i
+          id="cart-box"
+          aria-controls="cart-icon"
+          class="uil uil-shopping-bag"
+        ></i>
+
+        <!-- =================1111111111================== -->
+        <div id="cart-icon" data-visible="false" class="cart-icon">
+          <div class="shopping flex">
+            <p>Shopping Basket</p>
+            <i id="cross-btn" class="uil uil-times"></i>
+          </div>
+          <div class="cart bold-800 flex">
+            <i class="uil uil-shopping-cart-alt"></i>
+            <p>Cart Is Empty</p>
+
+            <!-- ================================================== -->
+
+            <!-- ================================================== -->
+          </div>
+        </div>
+      </div>
+      <div class="mobile-open-btn"><i class="uil uil-align-right"></i></div>
+    </header>
+
+    <!-- ===========Hero Section===================== -->
+
+    <main class="hero-section">
+      <div>
+        <h1 class="fs-200 fs-poppins">
+          Beats Solo
+          <span class="block lineheight fs-300 bold-900 big-wireless fs-poppins"
+            >Wireless</span
+          ><span
+            class="text-white fs-900 uppercase lineheight-2 bold-bolder fs-poppins"
+            >HeadPhone</span
+          >
+        </h1>
+        <img src="image/image1.png" alt="" />
+      </div>
+      <div class="hero-inner flex">
+        <div>
+          <button class="large-btn bg-red text-white fs-poppins fs-50">
+            Shop By Category
+          </button>
+        </div>
+        <div class="hero-info">
+          <h4 class="fs-montserrat">Description</h4>
+          <p class="fs-montserrat">
+            There are many variations passages of Lorem Ipsum available, but the
+            majority have suffered alteration
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- =================Product Section======================= -->
+
+    <section class="product-section">
+      <div class="category bg-black grid">
+        <div>
+          <h3 class="text-white fs-50 fs-montserrat bold">
+            Enjoy <span class="block fs-300 fs-poppins bold">With</span
+            ><span
+              class="earphone uppercase fs-400 fs-montserrat bold-900 lineheight"
+              >Earphone</span
+            >
+          </h3>
+          <button class="prdduct-btn large-btn text-white bg-red fs-montserrat">
+            Browse
+          </button>
+        </div>
+        <div class="product-img1">
+          <img src="image/h.png" alt="" />
+        </div>
+      </div>
+      <div class="category bg-yellow grid">
+        <div>
+          <h3 class="text-white fs-50 fs-montserrat bold">
+            New <span class="block fs-300 fs-poppins bold">Wear</span
+            ><span
+              class="earphone uppercase fs-400 fs-montserrat bold-900 lineheight"
+              >Gadget</span
+            >
+          </h3>
+          <button
+            class="prdduct-btn large-btn text-yellow bg-white fs-montserrat"
+          >
+            Browse
+          </button>
+        </div>
+        <div class="product-img2">
+          <img src="image/w.png" alt="" />
+        </div>
+      </div>
+      <div class="category bg-red grid">
+        <div>
+          <h3 class="text-white fs-50 fs-montserrat bold">
+            Trend <span class="block fs-300 fs-poppins bold">Devices</span
+            ><span
+              class="earphone uppercase fs-400 fs-poppins bold-900 lineheight"
+              >Laptop</span
+            >
+          </h3>
+          <button class="prdduct-btn large-btn text-red bg-white fs-poppins">
+            Browse
+          </button>
+        </div>
+        <div class="product-img3">
+          <img src="image/Laptop.png" alt="" />
+        </div>
+      </div>
+      <div class="category bg-gray grid">
+        <div>
+          <h3 class="text-black fs-50 fs-poppins bold">
+            Best
+            <span class="block fs-300 fs-poppins bold text-black">Gaming</span
+            ><span
+              class="earphone uppercase fs-400 fs-poppins bold-900 lineheight"
+              >Console</span
