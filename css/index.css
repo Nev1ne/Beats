@@ -712,3 +712,241 @@
     .lineheight{
       --line: 13rem
     }
+
+  .lineheight-2{
+    --line2: 12rem;
+  }
+  .hero-info{
+    display: block;
+    text-align: end;
+    width: 25%;
+    
+  }
+  
+  .big-wireless{
+    font-size: 5rem;
+  }
+  .hero-inner{
+    margin-top: -14rem;
+    padding-bottom: 8rem;
+  }
+  
+}
+
+
+/* =================Product Section===================== */
+
+.product-section{
+  width: 93vw;
+  margin-inline: auto;
+  
+}
+
+.category{
+  border-radius: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-end;
+  padding: 7rem 4rem 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 777;
+  margin-block: 1rem;
+}
+
+.prdduct-btn{
+  margin-top: 1rem;
+  padding-inline: 2rem;
+}
+.earphone{
+  color: hsl(var(--clr-white) / 0.2);
+}
+
+.product-img1{
+  position: absolute;
+  top: -2.3rem;
+  right: 3rem;
+  z-index: -11;
+}
+
+.product-img2{
+  position: absolute;
+  right: -6rem;
+  top: -0.5rem;
+  }
+
+.product-img3{
+  position: absolute;
+  width: 80%;
+  right: -3.5rem;
+  top: 2.5rem;
+  }
+
+.product-img4{
+  position: absolute;
+  width: 50%;
+  right: 1rem;
+  top: 5rem;
+  }
+
+.product-img5{
+  position: absolute;
+  width: 100%;
+  right: -4rem;
+  top: 1rem;
+  z-index: -1;
+  }
+
+
+.product-img6{
+  position: absolute;
+  width: 70%;
+  right: -3rem;
+  top: 5rem;
+  z-index: -1;
+  }
+
+
+  /* ================================= */
+
+  .category:nth-child(1){
+    grid-area: one;
+  }
+  .category:nth-child(2){
+    grid-area: two;
+  }
+  .category:nth-child(3){
+    grid-area: three;
+  }
+  .category:nth-child(4){
+    grid-area: four;
+  }
+  .category:nth-child(5){
+    grid-area: five;
+  }
+  .category:nth-child(6){
+    grid-area: six;
+  }
+
+  @media (min-width: 35em) and (max-width: 59em){
+    .product-section{
+      width: 95vw;
+      margin-inline: auto;
+      margin-block: 2rem;
+      gap: 1.5rem;
+      display: grid;
+      grid-template-areas: 
+      'one two'
+      'three three'
+      'six five'
+      'four four';
+    }
+    
+    .category{
+      border-radius: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: flex-end;
+      padding: 7rem 4rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+      z-index: 777;
+      margin-block: 0rem;
+
+    }
+
+    .product-img3{
+      position: absolute;
+      width: 60%;
+      right: -1rem;
+      top: 1rem;
+      }
+    .product-img4{
+      position: absolute;
+      width: 50%;
+      right: -1rem;
+      top: 1rem;
+      }
+    .product-img5{
+      position: absolute;
+      width: 110%;
+      top: 2.8rem;
+      }
+  }
+
+
+  @media (min-width: 59em){
+    .product-section{
+      width: 95vw;
+      margin-inline: auto;
+      margin-block: 2rem;
+      gap: 1.5rem;
+      display: grid;
+      grid-template-areas: 
+      'one two three three'
+      'four four five six';
+    }
+    .category{
+      border-radius: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: flex-end;
+      padding: 10rem 4rem 4rem 3rem;
+      position: relative;
+      overflow: hidden;
+      z-index: 777;
+      margin-block: 0rem;
+
+    }
+
+    .product-img1{
+      position: absolute;
+      top: 1rem;
+      width: 150%;
+      right: -10rem;
+      z-index: -11;
+    }
+    
+    .product-img2{
+      position: absolute;
+      right: -6rem;
+      top: 2rem;
+      }
+    
+    .product-img3{
+      position: absolute;
+      width: 80%;
+      right: -3.5rem;
+      top: 1rem;
+      }
+    
+    .product-img4{
+      position: absolute;
+      width: 50%;
+      right: 1rem;
+      top: 5rem;
+      }
+    
+    .product-img5{
+      position: absolute;
+      width: 100%;
+      right: -4rem;
+      top: 1rem;
+      z-index: -1;
+      }
+    
+    
+    .product-img6{
+      position: absolute;
+      width: 70%;
+      right: -3rem;
+      top: 5rem;
+      z-index: -1;
+      }
+
+    .lineheight{
+      --line: 3rem
+    }
+    .lineheight-2{
+      --line: 3rem
+    }
+  }
+
+/* =================Product Section===================== */
