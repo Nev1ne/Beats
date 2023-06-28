@@ -1420,3 +1420,129 @@
     cursor: pointer;
   }
   
+.inputField input{
+    border: 0;
+    width: 60%;
+  }
+  
+  .inputField input:hover,
+  .inputField input:focus{
+    outline: none;
+  }
+  
+  .inputField input[type="email"]{
+    margin-left: 2.5rem;
+  }
+  
+  
+  @media (min-width: 35em) and (max-width: 59em){
+    .footer{
+      --grid-gap: 0.5rem
+      grid-auto-columns: auto;
+      grid-template-areas: 
+      'one two'
+      'three four';
+    }
+    
+  .footer-logo > p{
+    font-size: 1rem;
+  }
+  
+  .footer-logo .social-media{
+    --flex-gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-menu li{
+    margin-top: 0.1rem;
+  }
+  
+  .footer-menu a{
+  font-size: 1rem;
+  }
+  
+  .updates{
+    font-size: 1.5rem;
+  }
+  .inputField input{
+    border: 0;
+    width: 50%;
+  }
+  
+  
+  .inputField input[type="email"]{
+    margin-left: 2rem;
+  }
+  }
+  
+  
+  
+  @media (min-width: 59em){
+    .footer{
+      width: 92vw;
+      margin-top: 6rem;
+      --grid-gap: 2rem;
+      grid-auto-columns: auto;
+      grid-template-areas: 
+      'one two three four';
+    }
+    .footer-logo > p{
+      font-size: 1rem;
+    }
+    .footer-menu > h3{
+     font-size: 1rem;
+    }
+    .footer-menu a{
+      font-size: 1rem;
+      }
+  
+      .contact > h3{
+        font-size: 1rem;
+      }
+      .emails > h3{
+        font-size: 1rem;
+      }
+  
+      .inputField input{
+        border: 0;
+        width: 100%;
+      }
+      
+  }
+  
+  
+  /* ==============CopyRight------------------- */
+  .text-align{
+    text-align: center;
+  }
+  
+  .p-top{
+    padding: 1rem 0;
+  }
+  
+  .copyRight{
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    margin-inline: auto;
+    background-color: hsl(var(--clr-black));
+    color: hsl(var(--clr-white) / 0.5);
+  }
+  
+  @media (min-width: 35em) and (max-width: 59em){
+    .copyRight{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+  }
+  
+  @media (min-width: 59em){
+    .copyRight{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+    .c-font{
+      font-size: 1rem;
+    }
+  }
