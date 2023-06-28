@@ -950,3 +950,230 @@
   }
 
 /* =================Product Section===================== */
+/* --===============Service Section================== */
+
+.service-section{
+    width: 90vw;
+    margin-inline: auto;
+    margin-block: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+    'one two'
+    'three four';
+  }
+  
+  .service:nth-child(1){
+    grid-area: one;
+  }
+  .service:nth-child(2){
+    grid-area: two;
+  }
+  .service:nth-child(3){
+    grid-area: three;
+  }
+  .service:nth-child(4){
+    grid-area: four;
+  }
+  
+  .service{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1rem;
+  }
+  
+  .service .fs-200{
+    font-size: .9rem;
+  }
+  .service .fs-50{
+    font-size: .79rem;
+  }
+  
+  @media (min-width: 59em){
+    .service-section{
+      width: 90vw;
+      margin-inline: auto;
+      margin-block: 2rem;
+      display: grid;
+      gap: 5rem;
+      grid-template-areas: 
+      'one two three four';
+    }
+  
+    .service .fs-200{
+      font-size: 1rem;
+    }
+    .service .fs-50{
+      font-size: .79rem;
+    }
+  }
+  
+  /* =============Feature Section=============== */
+  
+  .feature-section{
+    width: 90vw;
+    margin-inline: auto;
+    border-radius: 2rem;
+    position: relative;
+    margin-top: 15rem;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-inline: 4rem;
+    padding: 8rem 2rem 2rem 2rem;
+  }
+  
+  .feature-section >* img{
+    margin-top: -18rem;
+    position: absolute;
+    right: -1.5rem;
+  }
+  
+  .feature-info{
+    padding-inline: 1rem;
+    margin-top: 1rem;
+  }
+  
+  @media (min-width: 35em) and (max-width: 59em){
+    .feature-section{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 55rem;
+      text-align: left;
+      padding: 2rem 0rem;
+      gap: 7rem;
+    }
+    .feature-section >* img{
+      margin-top: -18rem;
+      position: absolute;
+      right: 5rem;
+    }
+    .smile{
+      display: block;
+      line-height: 2rem;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  @media (min-width: 59em){
+  .feature-section{
+    width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+    gap: 15rem;
+    padding: 4rem 7rem;
+    place-items: start;
+    z-index: 2;
+  }
+  
+  .feature-section >* img{
+    margin-top: -25rem;
+    position: absolute;
+    right: 19rem;
+    z-index: -1;
+  }
+  
+  .font-size{
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+  
+  .smile{
+    display: block;
+    margin-bottom: 2rem;
+  }
+  }
+  
+  
+  /* =============Best-selling Product==================== */
+  
+  .best-product{
+    padding-block: 5rem;
+    text-align: center;
+  }
+  
+  .best-Seller{
+    width: 90vw;
+    margin-inline: auto;
+    text-align: center;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five'
+    'six'
+    'seven'
+    'eight';
+  }
+  
+  .best-Seller:nth-child(1){
+    grid-area: one;
+  }
+  .best-Seller:nth-child(2){
+    grid-area: two;
+  }
+  .best-Seller:nth-child(3){
+    grid-area: three;
+  }
+  .best-Seller:nth-child(4){
+    grid-area: four;
+  }
+  .best-Seller:nth-child(5){
+    grid-area: five;
+  }
+  .best-Seller:nth-child(6){
+    grid-area: six;
+  }
+  .best-Seller:nth-child(7){
+    grid-area: seven;
+  }
+  .best-Seller:nth-child(8){
+    grid-area: eight;
+  }
+  
+  
+  
+  .product{
+    text-align: left;
+    --grid-gap: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .product:hover{
+    color: hsl(var(--clr-red));
+  }
+  
+  .product-details{
+    position: absolute;
+    height: 25%;
+    place-items: center;
+    font-size: 1.5rem;
+    --grid-gap: 0rem;
+    width: 10%;
+    right: 0;
+    top: 0;
+    border-radius: .5rem;
+    transform: translateX(120%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .product:hover .product-details{
+    transform: translateX(0%);
+  }
+  
+  .product > img{
+   border-radius: 2rem;
+  }
+  .letter-spacing{
+    letter-spacing: -1px;
+    font-size: 2.2rem;
+  }
