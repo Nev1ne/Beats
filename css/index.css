@@ -1177,3 +1177,246 @@
     letter-spacing: -1px;
     font-size: 2.2rem;
   }
+
+@media (min-width: 35em) and (max-width: 59em){
+    .best-Seller{
+      width: 90vw;
+      margin-inline: auto;
+      text-align: center;
+      display: grid;
+      gap: 3rem;
+      padding-block: 2rem;
+      grid-template-areas: 
+      'one two'
+      'three four'
+      'five six'
+      'seven eight';
+    }
+  }
+  
+  @media (min-width: 59em){
+    .best-Seller{
+      width: 95vw;
+      margin-inline: auto;
+      text-align: center;
+      display: grid;
+      gap: 3rem;
+      padding-block: 2rem;
+      grid-template-areas: 
+      'one two three four'
+      'five six seven eight';
+    }
+  }
+  
+  
+  /* ====================Feature Section Secont ? Feature Green */
+  
+  .feature-green img{
+    margin-top: -18rem;
+    right: 4.5rem;
+    width: 70%;
+  }
+  
+  @media (min-width: 35em) and (max-width: 59em){
+    .feature-green img{
+      margin-top: -17rem;
+      right: 12rem;
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 59em){
+    .feature-green img{
+      margin-top: -19rem;
+      right: 40rem;
+      width: 50%;
+    }
+  }
+  
+  /* =============================Recent News Section================ */
+  
+  .padding-inline{
+    padding-inline: 0.8rem;
+  }
+  
+  .recent-news{
+    width: 90vw;
+    margin-inline: auto;
+    --grid-gap: 1rem;
+    padding-bottom: 2rem;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three';
+  }
+  
+  .recent-news:nth-child(1){
+    grid-area: one;
+  }
+  .recent-news:nth-child(2){
+    grid-area: two;
+  }
+  .recent-news:nth-child(3){
+    grid-area: three;
+  }
+  
+  
+  .news > img{
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .news >img:hover{
+    box-shadow: 5px 5px 57px -6px hsl(var(--clr-black) /0.5);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  
+  @media (min-width: 59em){
+    .recent-news{
+      width: 95vw;
+      margin-inline: auto;
+      --grid-gap: 2rem;
+      padding-bottom: 5rem;
+      grid-template-areas: 
+      'one two three';
+    }
+    .news{
+      --grid-gap: 0.8rem;
+    }
+    .news > h2{
+       font-size: 1.2rem;
+    }
+    .news > p{
+      font-size: 0.9rem;
+      padding-right: 4rem;
+    }
+  }
+  
+  .brands{
+    place-items: center;
+    --grid-gap: 4rem;
+    padding-block: 4rem;
+    margin-block: 2rem;
+    background-color: hsl(var(--clr-gray));
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+  }
+  
+  .brands:nth-child(1){
+    grid-area: one;
+  }
+  .brands:nth-child(2){
+    grid-area: two;
+  }
+  .brands:nth-child(3){
+    grid-area: three;
+  }
+  .brands:nth-child(4){
+    grid-area: four;
+  }
+  .brands:nth-child(5){
+    grid-area: five;
+  }
+  
+  .brands >* img{
+    opacity: 0.2;
+    cursor: pointer;
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .brands >* img:hover{
+    opacity: 1;
+  }
+  
+  @media (min-width: 35em) and (max-width: 59em){
+    .brands{
+      grid-template-areas:
+      'one two'
+      'three four';
+    }
+  }
+  
+  @media (min-width: 59em){
+    .brands{
+      grid-template-areas:
+      'one two three four five';
+    }
+  }
+  
+  
+  /* ================footer==================== */
+  
+  .footer{
+    margin-block: 5rem;
+    width: 85vw;
+    margin-inline: auto;
+    grid-auto-columns: auto;
+    --grid-gap:1.5rem;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four';
+  }
+  
+  .footer:nth-child(1){
+    grid-area: one;
+  }
+  .footer:nth-child(2){
+    grid-area: two;
+  }
+  .footer:nth-child(3){
+    grid-area: three;
+  }
+  .footer:nth-child(4){
+    grid-area: four;
+  }
+  
+  .footer-logo{
+    --grid-gap: 2rem
+  }
+  
+  .footer-logo > p{
+    width: 60%;
+  }
+  
+  .footer-logo .social-media{
+    --flex-gap: 1.5rem;
+  }
+  
+  .footer-menu > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-menu li{
+    margin-top: 0.5rem;
+  }
+  
+  .footer-menu a{
+    text-decoration: none;
+  }
+  
+  .footer .contact > p{
+    width: 60%;
+  }
+  
+  .inputField{
+  padding: .5rem 0.5rem;
+  border-radius: 4rem;
+  }
+  
+  .inputField > button{
+    border: 0;
+    padding: 0.7rem 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+  
