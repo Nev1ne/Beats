@@ -1,0 +1,405 @@
+/* Custom Properties */
+
+/* =====================Par 2--------------------------- */
+
+:root {
+    /* color */
+    --clr-gray: 0 0% 86.3%;
+    --clr-gray-light: 0 0% 93.3%;
+    --clr-red: 356.7 90.1% 56.5%;
+    --clr-black: 0 0% 21.2%;
+    --clr-yellow: 43.8 99% 58.8%;
+    --clr-very-light-gray: 300 2.7% 92.7%;
+    --clr-green: 144.3 64.4% 49.6%;
+    --clr-blue: 214.5 100% 53.9%;
+    --clr-white: 0 0% 100%;
+  
+    /* font-size */
+    /* --fs-bf-194: 12.125rem; */
+    --fs-bf-194: 12.3vw;
+    --fs-bf-109: 6.8125rem;
+    --fs-bf-65: 4.065rem;
+    --fs-bf-80: 5rem;
+    --fs-bf-50: 3.125rem;
+    --fs-bf-45: 2.8125rem;
+    --fs-bf-30: 1.875rem;
+    --fs-bf-20: 1.25rem;
+    --fs-bf-16: 1rem;
+    --fs-bf-15: 0.9375rem;
+  
+    /* font family */
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+  }
+  
+  /* =====================Par 2--------------------------- */
+  
+  @media (max-width: 35em){
+    :root{
+      --fs-bf-194: 12.3vw;
+    --fs-bf-109: 6.8125rem;
+    --fs-bf-65: 4.065rem;
+    --fs-bf-80: 5rem;
+    --fs-bf-50: 3.125rem;
+    --fs-bf-45: 2.8125rem;
+    --fs-bf-30: 1.875rem;
+    --fs-bf-20: 1rem;
+    --fs-bf-16: 0.8rem;
+    --fs-bf-15: 0.8rem;
+  
+    }
+  }
+  @media (min-width: 35em) and (max-width: 59em){
+    :root{
+      --fs-bf-194: 12.3vw;
+    --fs-bf-109: 6.8125rem;
+    --fs-bf-65: 4.065rem;
+    --fs-bf-80: 5rem;
+    --fs-bf-50: 3.125rem;
+    --fs-bf-45: 2.8125rem;
+    --fs-bf-30: 2.55rem;
+    --fs-bf-20: 1.25rem;
+    --fs-bf-16: 1rem;
+    --fs-bf-15: 0.8375rem;
+  
+    }
+  }
+  
+  @media (min-width: 59em){
+    :root{
+      --fs-bf-194: 12.3vw;
+    --fs-bf-109: 6.8125rem;
+    --fs-bf-65: 4.065rem;
+    --fs-bf-80: 5rem;
+    --fs-bf-50: 3.125rem;
+    --fs-bf-45: 2.8125rem;
+    --fs-bf-30: 1.875rem;
+    --fs-bf-20: 2rem;
+    --fs-bf-16: 1rem;
+    --fs-bf-15: 0.9375rem;
+  
+    }
+  }
+  
+  /* ====================Part 1----------------------------------------------- */
+  
+  /* End Custom Properties */
+  
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /* ====================End Part 1----------------------------------------------- */
+  
+  
+  /* ===========Utility Class=================== */
+  
+  /* Generall Utiltiy Class */
+  
+  body{
+    overflow-x: hidden;
+  }
+  
+  /* background-color */
+  
+  .bg-red {
+    background-color: hsl(var(--clr-red));
+  }
+  .bg-black {
+    background-color: hsl(var(--clr-black));
+  }
+  .bg-green {
+    background-color: hsl(var(--clr-green));
+  }
+  .bg-blue {
+    background-color: hsl(var(--clr-blue));
+  }
+  .bg-yellow {
+    background-color: hsl(var(--clr-yellow));
+  }
+  .bg-gray {
+    background-color: hsl(var(--clr-gray));
+  }
+  .bg-light-gray {
+    background-color: hsl(var(--clr-gray-light));
+  }
+  .bg-very-light-gray {
+    background-color: hsl(var(--clr-very-light-gray));
+  }
+  .bg-white {
+    background-color: hsl(var(--clr-white));
+  }
+  
+  /* Text-color */
+  
+  .text-red {
+    color: hsl(var(--clr-red));
+  }
+  .text-black {
+    color: hsl(var(--clr-black));
+  }
+  .text-green {
+    color: hsl(var(--clr-green));
+  }
+  .text-blue {
+    color: hsl(var(--clr-blue));
+  }
+  .text-yellow {
+    color: hsl(var(--clr-yellow));
+  }
+  .text-gray {
+    color: hsl(var(--clr-gray));
+  }
+  .text-light-gray {
+    color: hsl(var(--clr-gray-light));
+  }
+  .text-very-light-gray {
+    color: hsl(var(--clr-very-light-gray));
+  }
+  .text-white {
+    color: hsl(var(--clr-white));
+  }
+  
+  /* font-family */
+  
+  .fs-poppins {
+    font-family: var(--font-poppins);
+  }
+  .fs-montserrat {
+    font-family: var(--font-montserrat);
+  }
+  
+  /* font-size */
+  
+  .fs-900 {
+    font-size: var(--fs-bf-194);
+  }
+  .fs-800 {
+    font-size: var(--fs-bf-109);
+  }
+  .fs-700 {
+    font-size: var(--fs-bf-80);
+  }
+  .fs-600 {
+    font-size: var(--fs-bf-65);
+  }
+  .fs-500 {
+    font-size: var(--fs-bf-50);
+  }
+  .fs-400 {
+    font-size: var(--fs-bf-45);
+  }
+  .fs-300 {
+    font-size: var(--fs-bf-30);
+  }
+  .fs-200 {
+    font-size: var(--fs-bf-20);
+  }
+  .fs-100 {
+    font-size: var(--fs-bf-16);
+  }
+  .fs-50 {
+    font-size: var(--fs-bf-15);
+  }
+  
+  .bold-100 {
+    font-weight: 100;
+  }
+  .bold-200 {
+    font-weight: 200;
+  }
+  .bold-300 {
+    font-weight: 300;
+  }
+  .bold-400 {
+    font-weight: 400;
+  }
+  .bold-500 {
+    font-weight: 500;
+  }
+  .bold-600 {
+    font-weight: 600;
+  }
+  .bold-700 {
+    font-weight: 700;
+  }
+  .bold-800 {
+    font-weight: 800;
+  }
+  .bold-900 {
+    font-weight: 900;
+  }
+  .bold-bold {
+    font-weight: bold;
+  }
+  .bold-bolder {
+    font-weight: bolder;
+  }
+  
+  /* ========Component Utility Class=========== */
+  .uil{
+    cursor: pointer;
+  }
+  
+  .flex {
+    display: flex;
+    gap: var(--flex-gap, 1rem);
+  }
+  
+  .grid {
+    display: grid;
+    gap: var(--grid-gap, 1rem);
+  }
+  
+  .container {
+    width: 96vw;
+    margin-inline: auto;
+    padding-inline: 2rem;
+  }
+  
+  
+  
+  /* ===========Utility End Class=================== */
+  
+  /* ==========Header Section================ */
+  
+  .primary-header {
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+  }
+  
+  .header-inner-one {
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 2rem;
+  }
+  
+  .mobile-close-btn {
+    display: none;
+  }
+  
+  .primary-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    --flex-gap: 3rem;
+  }
+  
+  .primary-navigation .active {
+    color: #000000;
+  }
+  
+  .primary-navigation a {
+    text-decoration: none;
+    color: hsl(var(--clr-black) / 0.6);
+    cursor: pointer;
+  }
+  
+  .header-login {
+    justify-content: space-between;
+    align-items: center;
+    --flex-gap: 2rem;
+  }
+  
+  .header-login .uil-shopping-bag {
+    font-size: 2rem;
+    margin-top: -0.5rem;
+    position: relative;
+  }
+  
+  .header-login .uil-shopping-bag::after {
+    content: "0";
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(var(--clr-white));
+    margin-top: -3rem;
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+    display: grid;
+    width: 1rem;
+    height: 1.2rem;
+    background-color: hsl(var(--clr-red));
+  }
+  
+  .mobile-open-btn {
+    display: none;
+  }
