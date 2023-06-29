@@ -115,3 +115,83 @@
 .product-taps > .active-tab{
     border-color: hsl(var(--clr-red));
 }
+
+
+.tabs-light-text{
+    color: hsl(var(--clr-black) /0.5);
+}
+
+
+/* =============Product Description=============== */
+
+/* ======Reviews section-============= */
+
+.display-reviews{
+    align-items: center;
+    border-radius: 2rem;
+    padding: 5rem 0;
+    margin-block: 2rem;
+}
+
+.display-reviews .uil-user-circle{
+    font-size: 5rem;
+    padding-inline: 2rem;
+}
+
+.likes-icon{
+    margin-block: 1rem;
+    align-items: center;
+}
+
+.likes-icon > i{
+    padding: .2rem .5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.likes-icon span{
+    font-size: 1rem;
+    padding: .2rem .5rem;
+    border-radius: 0.2rem;
+    position: relative;
+}
+
+.likes-icon span::before{
+    content: '';
+    width: 0.5rem;
+    top: 35%;
+    left: -0.3rem;
+    aspect-ratio: 1;
+    background-color: hsl(var(--clr-white));
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.give-reviews{
+  align-items: center;
+}
+
+.message > textarea{
+    border-radius: 2rem;
+    border: 0;
+    margin-bottom: 2rem;
+}
+
+.message > textarea[type="text"]{
+    padding-inline: 2rem;
+    font-size: 1.2rem;
+}
+
+.message > textarea:focus{
+    outline: 0;
+}
+
+.review-btn{
+    justify-content: end;
+    align-items: center;
+}
+
+.review-btn > button{
+    padding: 1rem 3rem;
+    font-size: 1rem;
+}
