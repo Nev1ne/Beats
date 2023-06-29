@@ -195,3 +195,43 @@
     padding: 1rem 3rem;
     font-size: 1rem;
 }
+
+.description[data-tab="true"]{
+    display: none;
+}
+
+.reviews-container{
+    display: none;
+}
+
+.reviews-container[data-tab="true"]{
+  display: block;
+}
+
+/* ======Reviews section-============= */
+
+/* =========Media Quries=============== */
+@media (min-width: 50em){
+    .product-description{
+       width: 70vw;
+    }
+    .product-taps > a{
+        font-size: 1rem;
+    }
+    .reviews-container p{
+        font-size: 1.5rem;
+    }
+    .connent-box p{
+        font-size: 1rem;
+    }
+    .reviews > p{
+        font-size: 1.3rem;
+    }
+    .message > p{
+        font-size: 1.3rem;
+
+    }
+}
+
+
+/* =========Media Quries=============== */
