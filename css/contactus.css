@@ -77,3 +77,54 @@
     .map h4{
         font-size: 1rem;
     }
+
+}
+
+/* =============Support================== */
+
+.suport-container{
+    width: 90vw;
+    margin-inline: auto;
+    margin-bottom: 7rem;
+    place-items: center;
+    --grid-gap: 3rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three';
+}
+
+.suport-container:nth-child(1){
+    grid-area: one;
+}
+
+.suport-container:nth-child(2){
+    grid-area: two;
+}
+.suport-container:nth-child(3){
+    grid-area: three;
+}
+
+.support-info{
+    --grid-gap: 1rem;
+}
+.suport-img{
+    place-items: center;
+}
+
+.support-info{
+    place-items: center;
+}
+
+
+@media (min-width: 45em){
+    .suport-container{
+        grid-template-areas: 
+        'one two three';
+    }
+    .support-info > p,
+    .support-info span{
+        font-size: 1rem;
+    }
+}
