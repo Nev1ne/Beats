@@ -135,4 +135,81 @@
   .product-list:focus{
       color: hsl(var(--clr-red));
   }
+  .product-list img {
+    border-radius: 1rem;
+  }
+  
+  .shop-btn {
+    align-items: center;
+    --flex-gap: 3rem;
+    transform: translateX(-38%);
+    transition: transform 250ms ease-in;
+    cursor: pointer;
+  }
+  
+  
+  .product-list:hover .shop-btn {
+    transform: translateX(0%);
+  }
+  
+  .shop-btn > button {
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+  }
+  
+  /* =================Pop_up Box======================= */
+  
+  .pup-up{
+      position: absolute;
+      background-color: hsl(var(--clr-red));
+      top: 1rem;
+      left: 1rem;
+      border-radius: 50%;
+      padding: 1rem 1rem;
+      color: hsl(var(--clr-white));
+  }
+  
+  
+  
+  /* =================Pop_up Box======================= */
+  
+  
+  /* ============Next Page===================== */
+  
+  .next-page{
+      margin-left: 2rem;
+      padding-block: 3rem;
+      margin-bottom: 5rem;
+      align-items: center;
+      font-size: 1.2rem;
+      --flex-gap: 2rem;
+      cursor: pointer;
+  }
+  
+  .next-page i{
+      font-size: 2.5rem;
+  }
+  
+  .next-page > .active{
+      padding: .5rem 1rem;
+      border-radius: .5rem;
+  }
+  
+  /* ============Next Page===================== */
+  /* ==========Shop Product====================== */
+  
+  /* ===============SideBar Section-================ */
+  .sidebar-search {
+    border-radius: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-search input {
+    padding: 1rem 0.5rem;
+    width: 80%;
+    border: 0;
+    border-radius: 2rem;
+  }
   
