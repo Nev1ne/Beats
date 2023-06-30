@@ -35,3 +35,33 @@ reviewTab.addEventListener('click', ()=>{
     }
 })
 
+
+let likeCount = 0;
+
+like.addEventListener('click', ()=>{
+    like.classList.add('like');
+    dislike.classList.remove('dislike');
+    likeCount++;
+    countLike.textContent = likeCount;
+    
+})
+
+dislike.addEventListener('click', ()=>{
+    like.classList.remove('like');
+    dislike.classList.add('dislike');
+    if(likeCount === 0){
+      likeCount = 0
+    }else{
+        likeCount--;
+    }
+    countLike.textContent = likeCount;
+    
+})
+
+addComment.addEventListener('click', ()=>{
+    const createElement = document.createElement('div')
+    createElement.classList.add('display-reviews')
+    createElement.classList.add('flex')
+    createElement.classList.add('bg-gray')
+    postReviews.appendChild(createElement);
+})
