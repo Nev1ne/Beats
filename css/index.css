@@ -626,7 +626,7 @@
   
   .large-btn:hover {
     background-color: hsl(var(--clr-black));
-    box-shadow: 3px 2px 37px -6px rgba(255,255,255,0.69);
+    box-shadow: 3px 2px 37px -6px rgba(228, 147, 147, 0.69);
   }
   
   /* ======================================== */
